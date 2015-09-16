@@ -172,6 +172,213 @@
           
           
             
+              <a class="post-title-link" href="/2015/09/16/Install-Theano-on-Ubuntu-14-04/" itemprop="url">
+                Install-Theano-on-Ubuntu-14-04
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          Posted on
+          <time itemprop="dateCreated" datetime="2015-09-16T12:11:43+09:00" content="2015-09-16">
+            2015-09-16
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; In
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/Deep-Learning/" itemprop="url" rel="index">
+                  <span itemprop="name">Deep Learning</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+            <span class="post-comments-count">
+              &nbsp; | &nbsp;
+              <a href="/2015/09/16/Install-Theano-on-Ubuntu-14-04/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count ds-thread-count" data-thread-key="2015/09/16/Install-Theano-on-Ubuntu-14-04/" itemprop="commentsCount"></span>
+              </a>
+            </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><p><em>Theano version: 0.7</em></p>
+<h2 id="Install_requirements">Install requirements</h2><figure class="highlight mel"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$&gt;</span> sudo apt-get install <span class="keyword">python</span>-numpy <span class="keyword">python</span>-scipy <span class="keyword">python</span>-dev <span class="keyword">python</span>-pip <span class="keyword">python</span>-nose g++ libopenblas-dev git</span><br><span class="line"><span class="variable">$&gt;</span> sudo pip install Theano</span><br><span class="line"><span class="variable">$&gt;</span> cd ~/Downloads</span><br><span class="line"><span class="variable">$&gt;</span> git clone git:<span class="comment">//github.com/Theano/Theano.git</span></span><br><span class="line"><span class="variable">$&gt;</span> cd Theano</span><br><span class="line"><span class="variable">$&gt;</span> <span class="keyword">python</span> setup.py develop --user</span><br><span class="line"><span class="variable">$&gt;</span> cd ..</span><br></pre></td></tr></table></figure>
+<h2 id="Test_the_newly_installed_packages">Test the newly installed packages</h2><ul>
+<li><p>NumPy (~30s):</p>
+<figure class="highlight mel"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">python</span> -c <span class="string">"import numpy; numpy.test()"</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>SciPy (~1m):</p>
+<figure class="highlight mel"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">python</span> -c <span class="string">"import scipy; scipy.test()"</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Theano (~30m):</p>
+<figure class="highlight mel"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">python</span> -c <span class="string">"import theano; theano.test()"</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="Reference">Reference</h2><ul>
+<li><a href="http://deeplearning.net/software/theano/" target="_blank" rel="external">http://deeplearning.net/software/theano/</a></li>
+<li><a href="http://deeplearning.net/software/theano/install.html#install" target="_blank" rel="external">http://deeplearning.net/software/theano/install.html#install</a></li>
+<li><a href="http://deeplearning.net/software/theano/install_ubuntu.html#install-ubuntu" target="_blank" rel="external">http://deeplearning.net/software/theano/install_ubuntu.html#install-ubuntu</a></li>
+</ul>
+</span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              <a class="post-title-link" href="/2015/09/16/Install-Digits-2-on-Ubuntu-14-04/" itemprop="url">
+                Install-Digits-2-on-Ubuntu-14-04
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          Posted on
+          <time itemprop="dateCreated" datetime="2015-09-16T10:29:51+09:00" content="2015-09-16">
+            2015-09-16
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; In
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/Deep-Learning/" itemprop="url" rel="index">
+                  <span itemprop="name">Deep Learning</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+            <span class="post-comments-count">
+              &nbsp; | &nbsp;
+              <a href="/2015/09/16/Install-Digits-2-on-Ubuntu-14-04/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count ds-thread-count" data-thread-key="2015/09/16/Install-Digits-2-on-Ubuntu-14-04/" itemprop="commentsCount"></span>
+              </a>
+            </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><h2 id="Download_Digits_2-0">Download <a href="https://developer.nvidia.com/digits" target="_blank" rel="external">Digits 2.0</a></h2><ul>
+<li>Login NVidia</li>
+<li>Download DIGITS v2.0.0 for Ubuntu 14.04 to ~/Downloads</li>
+</ul>
+<h2 id="Unpack_the_archive">Unpack the archive</h2><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$&gt; cd ~/Downloads</span><br><span class="line">$&gt; tar xvf digits-<span class="number">2.0</span><span class="class">.tar</span><span class="class">.gz</span></span><br></pre></td></tr></table></figure>
+<h2 id="Install_requirements">Install requirements</h2><blockquote>
+<p>The install.sh script installs all the requirements for DIGITS to run on Ubuntu 14.04. You only need to run this script once.</p>
+</blockquote>
+<figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$&gt;</span> cd digits-<span class="number">2.0</span></span><br><span class="line"><span class="variable">$&gt;</span> ./install.sh</span><br></pre></td></tr></table></figure>
+<h2 id="Start_DIGITS">Start DIGITS</h2><blockquote>
+<p>Use the runme.sh script to start the DIGITS server.</p>
+</blockquote>
+<figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$&gt;</span> ./runme.sh</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>Navigate in your browser to <a href="http://localhost:5000/" target="_blank" rel="external">http://localhost:5000/</a> to view your webserver.</p>
+</blockquote>
+<h2 id="Reference">Reference</h2><ul>
+<li><a href="https://developer.nvidia.com/digits" target="_blank" rel="external">https://developer.nvidia.com/digits</a></li>
+<li><a href="https://github.com/NVIDIA/DIGITS/releases/tag/v2.0.0" target="_blank" rel="external">https://github.com/NVIDIA/DIGITS/releases/tag/v2.0.0</a></li>
+<li><a href="https://github.com/NVIDIA/DIGITS/blob/digits-2.0/docs/WebInstall.md" target="_blank" rel="external">https://github.com/NVIDIA/DIGITS/blob/digits-2.0/docs/WebInstall.md</a></li>
+<li><a href="https://github.com/NVIDIA/DIGITS/blob/digits-2.0/docs/GettingStarted.md" target="_blank" rel="external">https://github.com/NVIDIA/DIGITS/blob/digits-2.0/docs/GettingStarted.md</a></li>
+<li><a href="https://github.com/NVIDIA/DIGITS/blob/digits-2.0/README.md#installation" target="_blank" rel="external">https://github.com/NVIDIA/DIGITS/blob/digits-2.0/README.md#installation</a></li>
+</ul>
+</span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
               <a class="post-title-link" href="/2015/09/15/Install-CUDA-7-on-Ubuntu-14-04/" itemprop="url">
                 Install-CUDA-7-on-Ubuntu-14-04
               </a>
@@ -193,8 +400,8 @@
             &nbsp; | &nbsp; In
             
               <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/blog/" itemprop="url" rel="index">
-                  <span itemprop="name">blog</span>
+                <a href="/categories/Deep-Learning/" itemprop="url" rel="index">
+                  <span itemprop="name">Deep Learning</span>
                 </a>
               </span>
 
@@ -351,7 +558,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">1</span>
+              <span class="site-state-item-count">3</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>
@@ -365,7 +572,7 @@
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">1</span>
+              <span class="site-state-item-count">3</span>
               <span class="site-state-item-name">tags</span>
               </a>
           </div>
