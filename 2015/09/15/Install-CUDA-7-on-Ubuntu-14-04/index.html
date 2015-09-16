@@ -22,6 +22,8 @@
 
 
 
+  <link href='//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
 
 <link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.5.1"/>
 
@@ -37,7 +39,7 @@
   <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
 
 
-<meta name="description" content="Install Caffe on Ubuntu 14.04Hardware Detail
+<meta name="description" content="Hardware Detail
 CPU: E5-2630
 RAM: 16GB
 GPU: GTX 960
@@ -46,12 +48,12 @@ Hard Disk: 1TB
 Software Detail
 NVidia Driver : NVIDIA-Linux-x86_64-352.41.run.
 CUDA : cuda_7.0.28_linux.run
-cuDNN :  c">
+cuDNN :  cudnn-7.0-linux-x64-v3.0-prod">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Install-CUDA-7-on-Ubuntu-14-04">
 <meta property="og:url" content="http://hanyuandong.com/2015/09/15/Install-CUDA-7-on-Ubuntu-14-04/index.html">
 <meta property="og:site_name" content="Kavin's Home">
-<meta property="og:description" content="Install Caffe on Ubuntu 14.04Hardware Detail
+<meta property="og:description" content="Hardware Detail
 CPU: E5-2630
 RAM: 16GB
 GPU: GTX 960
@@ -60,11 +62,11 @@ Hard Disk: 1TB
 Software Detail
 NVidia Driver : NVIDIA-Linux-x86_64-352.41.run.
 CUDA : cuda_7.0.28_linux.run
-cuDNN :  c">
-<meta property="og:updated_time" content="2015-09-16T03:22:20.771Z">
+cuDNN :  cudnn-7.0-linux-x64-v3.0-prod">
+<meta property="og:updated_time" content="2015-09-16T04:38:42.670Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Install-CUDA-7-on-Ubuntu-14-04">
-<meta name="twitter:description" content="Install Caffe on Ubuntu 14.04Hardware Detail
+<meta name="twitter:description" content="Hardware Detail
 CPU: E5-2630
 RAM: 16GB
 GPU: GTX 960
@@ -73,7 +75,7 @@ Hard Disk: 1TB
 Software Detail
 NVidia Driver : NVIDIA-Linux-x86_64-352.41.run.
 CUDA : cuda_7.0.28_linux.run
-cuDNN :  c">
+cuDNN :  cudnn-7.0-linux-x64-v3.0-prod">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -231,13 +233,6 @@ cuDNN :  c">
 
         
           
-            <span class="post-comments-count">
-              &nbsp; | &nbsp;
-              <a href="/2015/09/15/Install-CUDA-7-on-Ubuntu-14-04/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count ds-thread-count" data-thread-key="2015/09/15/Install-CUDA-7-on-Ubuntu-14-04/" itemprop="commentsCount"></span>
-              </a>
-            </span>
-          
         
       </div>
     </header>
@@ -248,7 +243,7 @@ cuDNN :  c">
       
 
       
-        <span itemprop="articleBody"><h1 id="Install_Caffe_on_Ubuntu_14-04">Install Caffe on Ubuntu 14.04</h1><h2 id="Hardware_Detail">Hardware Detail</h2><ul>
+        <span itemprop="articleBody"><h2 id="Hardware_Detail">Hardware Detail</h2><ul>
 <li>CPU: E5-2630</li>
 <li>RAM: 16GB</li>
 <li>GPU: GTX 960</li>
@@ -368,10 +363,6 @@ cuDNN :  c">
         
           <div class="comments" id="comments">
             
-              <div class="ds-thread" data-thread-key="2015/09/15/Install-CUDA-7-on-Ubuntu-14-04/"
-                   data-title="Install-CUDA-7-on-Ubuntu-14-04" data-url="http://hanyuandong.com/2015/09/15/Install-CUDA-7-on-Ubuntu-14-04/">
-              </div>
-            
           </div>
         
       </div>
@@ -451,6 +442,21 @@ cuDNN :  c">
 
         <div class="links-of-author motion-element">
           
+            <p class="site-author-name">Links</p>
+            
+              <span class="links-of-author-item">
+              <a href="http://kowon.dongseo.ac.kr/~lbg/" target="_blank">Lee Byung Gook</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://kowon.dongseo.ac.kr/~ppddee/" target="_blank">Lee Suk Ho</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://cangmean.org/" target="_blank">Mink</a>
+              </span>
+            
+          
         </div>
 
       </section>
@@ -461,7 +467,7 @@ cuDNN :  c">
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Install_Caffe_on_Ubuntu_14-04"><span class="nav-number">1.</span> <span class="nav-text">Install Caffe on Ubuntu 14.04</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Hardware_Detail"><span class="nav-number">1.1.</span> <span class="nav-text">Hardware Detail</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Software_Detail"><span class="nav-number">1.2.</span> <span class="nav-text">Software Detail</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Install_Ubuntu_14-04"><span class="nav-number">2.</span> <span class="nav-text">Install Ubuntu 14.04</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Make_usb_Installer"><span class="nav-number">2.1.</span> <span class="nav-text">Make usb Installer</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#UEFI_mode_start_ubuntu_14-04_usb_installer"><span class="nav-number">2.2.</span> <span class="nav-text">UEFI mode start ubuntu 14.04 usb installer</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Partition"><span class="nav-number">2.3.</span> <span class="nav-text">Partition</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Install_grub_on_/boot_partition"><span class="nav-number">2.4.</span> <span class="nav-text">Install grub on /boot partition</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Install_CUDA_7-0"><span class="nav-number">3.</span> <span class="nav-text">Install CUDA 7.0</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#pre-install"><span class="nav-number">3.1.</span> <span class="nav-text">pre-install</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Download"><span class="nav-number">3.2.</span> <span class="nav-text">Download</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Ready_to_install"><span class="nav-number">3.3.</span> <span class="nav-text">Ready to install</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Clear_pre-install_driver"><span class="nav-number">3.4.</span> <span class="nav-text">Clear pre-install driver</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Install_NVidia_driver"><span class="nav-number">3.5.</span> <span class="nav-text">Install NVidia driver</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Install_CUDA_7-0-28"><span class="nav-number">3.6.</span> <span class="nav-text">Install CUDA 7.0.28</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Test"><span class="nav-number">3.7.</span> <span class="nav-text">Test</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Setting_Environment"><span class="nav-number">3.8.</span> <span class="nav-text">Setting Environment</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Install_cuDNN_7-0"><span class="nav-number">4.</span> <span class="nav-text">Install cuDNN 7.0</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Install"><span class="nav-number">4.1.</span> <span class="nav-text">Install</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Install_OpenCV_3-0"><span class="nav-number">5.</span> <span class="nav-text">Install OpenCV 3.0</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Download-1"><span class="nav-number">5.1.</span> <span class="nav-text">Download</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Install_requirement"><span class="nav-number">5.2.</span> <span class="nav-text">Install requirement</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Compile"><span class="nav-number">5.3.</span> <span class="nav-text">Compile</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Install-1"><span class="nav-number">5.4.</span> <span class="nav-text">Install</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Test-1"><span class="nav-number">5.5.</span> <span class="nav-text">Test</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Install_OpenBLAS_and_Boost"><span class="nav-number">6.</span> <span class="nav-text">Install OpenBLAS and Boost</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Install_OpenBLAS"><span class="nav-number">6.1.</span> <span class="nav-text">Install OpenBLAS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Install_Boost"><span class="nav-number">6.2.</span> <span class="nav-text">Install Boost</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Install_Caffe_Require_package"><span class="nav-number">7.</span> <span class="nav-text">Install Caffe Require package</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Install_protobuf,_glog,_gflags"><span class="nav-number">7.1.</span> <span class="nav-text">Install protobuf, glog, gflags</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Install_IO_library:_hdf5,_leveldb,_snappy,_lmdb"><span class="nav-number">7.2.</span> <span class="nav-text">Install IO library: hdf5, leveldb, snappy, lmdb</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Install_pip"><span class="nav-number">7.3.</span> <span class="nav-text">Install pip</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Install_scipy"><span class="nav-number">7.4.</span> <span class="nav-text">Install scipy</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Install_Caffe"><span class="nav-number">8.</span> <span class="nav-text">Install Caffe</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Download-2"><span class="nav-number">8.1.</span> <span class="nav-text">Download</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Install-2"><span class="nav-number">8.2.</span> <span class="nav-text">Install</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Test-2"><span class="nav-number">8.3.</span> <span class="nav-text">Test</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Reference:"><span class="nav-number">9.</span> <span class="nav-text">Reference:</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Install_CDUA"><span class="nav-number">9.1.</span> <span class="nav-text">Install CDUA</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Install_cuDNN"><span class="nav-number">9.2.</span> <span class="nav-text">Install cuDNN</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Install_OpenBLAS-1"><span class="nav-number">9.3.</span> <span class="nav-text">Install OpenBLAS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Install_Boost-1"><span class="nav-number">9.4.</span> <span class="nav-text">Install Boost</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Install_OpenCV_3-0-1"><span class="nav-number">9.5.</span> <span class="nav-text">Install OpenCV 3.0</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Install_Caffe:"><span class="nav-number">9.6.</span> <span class="nav-text">Install Caffe:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#install_pip:"><span class="nav-number">9.7.</span> <span class="nav-text">install pip:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#install_python:"><span class="nav-number">9.8.</span> <span class="nav-text">install python:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Tutorial:"><span class="nav-number">9.9.</span> <span class="nav-text">Tutorial:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#make_caffe_error:"><span class="nav-number">9.10.</span> <span class="nav-text">make caffe error:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#install_pip_on_ubuntu_14-04"><span class="nav-number">9.11.</span> <span class="nav-text">install pip on ubuntu 14.04</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#install_scipy_on_ubuntu_14-04"><span class="nav-number">9.12.</span> <span class="nav-text">install scipy on ubuntu 14.04</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Hardware_Detail"><span class="nav-number">1.</span> <span class="nav-text">Hardware Detail</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Software_Detail"><span class="nav-number">2.</span> <span class="nav-text">Software Detail</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Install_Ubuntu_14-04"><span class="nav-number"></span> <span class="nav-text">Install Ubuntu 14.04</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Make_usb_Installer"><span class="nav-number">1.</span> <span class="nav-text">Make usb Installer</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#UEFI_mode_start_ubuntu_14-04_usb_installer"><span class="nav-number">2.</span> <span class="nav-text">UEFI mode start ubuntu 14.04 usb installer</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Partition"><span class="nav-number">3.</span> <span class="nav-text">Partition</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Install_grub_on_/boot_partition"><span class="nav-number">4.</span> <span class="nav-text">Install grub on /boot partition</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Install_CUDA_7-0"><span class="nav-number"></span> <span class="nav-text">Install CUDA 7.0</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#pre-install"><span class="nav-number">1.</span> <span class="nav-text">pre-install</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Download"><span class="nav-number">2.</span> <span class="nav-text">Download</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Ready_to_install"><span class="nav-number">3.</span> <span class="nav-text">Ready to install</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Clear_pre-install_driver"><span class="nav-number">4.</span> <span class="nav-text">Clear pre-install driver</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Install_NVidia_driver"><span class="nav-number">5.</span> <span class="nav-text">Install NVidia driver</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Install_CUDA_7-0-28"><span class="nav-number">6.</span> <span class="nav-text">Install CUDA 7.0.28</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Test"><span class="nav-number">7.</span> <span class="nav-text">Test</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Setting_Environment"><span class="nav-number">8.</span> <span class="nav-text">Setting Environment</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Install_cuDNN_7-0"><span class="nav-number"></span> <span class="nav-text">Install cuDNN 7.0</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Install"><span class="nav-number">1.</span> <span class="nav-text">Install</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Install_OpenCV_3-0"><span class="nav-number"></span> <span class="nav-text">Install OpenCV 3.0</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Download-1"><span class="nav-number">1.</span> <span class="nav-text">Download</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Install_requirement"><span class="nav-number">2.</span> <span class="nav-text">Install requirement</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Compile"><span class="nav-number">3.</span> <span class="nav-text">Compile</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Install-1"><span class="nav-number">4.</span> <span class="nav-text">Install</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Test-1"><span class="nav-number">5.</span> <span class="nav-text">Test</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Install_OpenBLAS_and_Boost"><span class="nav-number"></span> <span class="nav-text">Install OpenBLAS and Boost</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Install_OpenBLAS"><span class="nav-number">1.</span> <span class="nav-text">Install OpenBLAS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Install_Boost"><span class="nav-number">2.</span> <span class="nav-text">Install Boost</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Install_Caffe_Require_package"><span class="nav-number"></span> <span class="nav-text">Install Caffe Require package</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Install_protobuf,_glog,_gflags"><span class="nav-number">1.</span> <span class="nav-text">Install protobuf, glog, gflags</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Install_IO_library:_hdf5,_leveldb,_snappy,_lmdb"><span class="nav-number">2.</span> <span class="nav-text">Install IO library: hdf5, leveldb, snappy, lmdb</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Install_pip"><span class="nav-number">3.</span> <span class="nav-text">Install pip</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Install_scipy"><span class="nav-number">4.</span> <span class="nav-text">Install scipy</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Install_Caffe"><span class="nav-number"></span> <span class="nav-text">Install Caffe</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Download-2"><span class="nav-number">1.</span> <span class="nav-text">Download</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Install-2"><span class="nav-number">2.</span> <span class="nav-text">Install</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Test-2"><span class="nav-number">3.</span> <span class="nav-text">Test</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Reference:"><span class="nav-number"></span> <span class="nav-text">Reference:</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Install_CDUA"><span class="nav-number">1.</span> <span class="nav-text">Install CDUA</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Install_cuDNN"><span class="nav-number">2.</span> <span class="nav-text">Install cuDNN</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Install_OpenBLAS-1"><span class="nav-number">3.</span> <span class="nav-text">Install OpenBLAS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Install_Boost-1"><span class="nav-number">4.</span> <span class="nav-text">Install Boost</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Install_OpenCV_3-0-1"><span class="nav-number">5.</span> <span class="nav-text">Install OpenCV 3.0</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Install_Caffe:"><span class="nav-number">6.</span> <span class="nav-text">Install Caffe:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#install_pip:"><span class="nav-number">7.</span> <span class="nav-text">install pip:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#install_python:"><span class="nav-number">8.</span> <span class="nav-text">install python:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Tutorial:"><span class="nav-number">9.</span> <span class="nav-text">Tutorial:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#make_caffe_error:"><span class="nav-number">10.</span> <span class="nav-text">make caffe error:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#install_pip_on_ubuntu_14-04"><span class="nav-number">11.</span> <span class="nav-text">install pip on ubuntu 14.04</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#install_scipy_on_ubuntu_14-04"><span class="nav-number">12.</span> <span class="nav-text">install scipy on ubuntu 14.04</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
@@ -509,26 +515,11 @@ cuDNN :  c">
   
   
     
+    
 
   
-    
-  
 
-  <script type="text/javascript">
-    var duoshuoQuery = {short_name:"kavinhan"};
-    (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0]
-      || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-  </script>
-    
-     
 
-    
   
   
   <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
